@@ -60,6 +60,7 @@ html {
     text-align: center;
     padding-left: 50px;
     text-wrap: nowrap;
+    padding-right: 5px;
 
     /* Adjusted padding for smaller screens */
 }
