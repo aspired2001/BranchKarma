@@ -10,9 +10,9 @@ function Carreers() {
           <span className="italic font-serif text-lg text-center">&quot;Anyone who has never made a mistake has never tried anything new.&quot;</span>
           <img className="max-w-[400px] h-[270px] rounded-lg shadow-lg hover:transition-all hover:-translate-y-2 hover:cursor-pointer my-3" src="assets/img15.png" alt="Join us!" />
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center items-center">
           <span className="text-lg text-center font-serif">Let&apos;s team up!</span>
-          <img className="max-w-[400px] h-[270px] rounded-lg shadow-lg hover:transition-all hover:-translate-y-2 hover:cursor-pointer my-3 translate-x-12" src="assets/img11.png " alt="Join us!" />
+          <img className="w-[400px] h-[270px] rounded-lg shadow-lg hover:transition-all hover:-translate-y-2 hover:cursor-pointer my-3 " src="assets/img11.png " alt="Join us!" />
         </div>
       </div>
 
