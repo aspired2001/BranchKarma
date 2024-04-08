@@ -52,7 +52,7 @@ const Navbar = () => {
         <nav className="fixed top-0 z-50 w-full bg-black ">
             <div className="flex justify-between px-8 items-center py-4">
                 <div className="flex items-center gap-4 translate-y-1">
-                    <section className="flex items-center gap-24">
+                    <section className="flex items-center gap-4">
                         {/* menu */}
                         <FiMenu
                             onClick={() => setMenu(true)}
