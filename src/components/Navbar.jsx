@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
 import { FiGlobe } from 'react-icons/fi';
-
 import clsx from "clsx";
 
-const Navbar = ()=> {
+const Navbar = () => {
     const [isSideMenuOpen, setMenu] = useState(false);
 
     const navlinks = [
@@ -36,7 +35,7 @@ const Navbar = ()=> {
             link: "#"
         },
         {
-            label: " Trust and Charity",
+            label: "Philanthropy",
             link: "#"
         },
         {
@@ -50,23 +49,23 @@ const Navbar = ()=> {
     ];
 
     return (
-        <main>
-            <nav className="flex justify-between px-8 items-center py-4 bg-black">
-                <div className="flex items-center gap-8 translate-y-1">
-                    <section className="flex items-center gap-4">
+        <nav className="fixed top-0 z-50 w-full bg-black ">
+            <div className="flex justify-between px-8 items-center py-4">
+                <div className="flex items-center gap-4 translate-y-1">
+                    <section className="flex items-center gap-24">
                         {/* menu */}
                         <FiMenu
                             onClick={() => setMenu(true)}
                             className="text-3xl cursor-pointer lg:hidden text-white"
                         />
                         {/* logo */}
-                        <Link href={"/"} className="text-3xl font-serif text-white">
+                        <Link to={"/"} className="text-3xl font-customFont  text-white">
                             BranchKarma
                         </Link>
                     </section>
                     {navlinks.map((d, i) => (
-                        <Link key={i} href={d.link}>
-                            <a className="hidden lg:block text-white hover:text-[#81D8D0] text-nowrap font-serif hover:border-b-[4px] hover:border-[#81D8D0]">
+                        <Link className="translate-x-16" key={i} to={d.link}>
+                            <a className="hidden lg:block text-white hover:text-[#81D8D0] text-nowrap font-customFont       hover:border-b-[4px] hover:border-[#81D8D0] ">
                                 {d.label}
                             </a>
                         </Link>
@@ -87,7 +86,7 @@ const Navbar = ()=> {
                         />
 
                         {navlinks.map((d, i) => (
-                            <Link key={i} href={d.link}>
+                            <Link key={i} to={d.link}>
                                 <a className="font-bold">{d.label}</a>
                             </Link>
                         ))}
@@ -97,14 +96,11 @@ const Navbar = ()=> {
                 {/* last section */}
                 <section className="flex items-center gap-4">
                     {/* cart icon */}
-                    <FaPhoneAlt className="text-2xl text-white" />
+                  
                     <FiGlobe className="text-2xl text-white" />
-                    
-                    
                 </section>
-            </nav>
-            <hr />
-        </main>
+            </div>
+        </nav>
     );
 }
 

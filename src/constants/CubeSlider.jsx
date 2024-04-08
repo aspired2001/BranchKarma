@@ -11,7 +11,7 @@ const CubeSlider = ({ images, interval }) => {
         return () => {
             clearInterval(intervalId);
         };
-    }, [currentImageIndex, interval]); // Re-run effect whenever currentImageIndex or interval changes
+    }); // Re-run effect whenever currentImageIndex or interval changes
 
     const nextImage = () => {
         setCurrentImageIndex((prevIndex) =>

@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import CubeSlider from '../constants/CubeSlider';
+import { gsap } from 'gsap';
 
 const Company = () => {
     const images = [
@@ -16,22 +17,57 @@ const Company = () => {
         setExpanded(!expanded);
     };
 
+    const h1Ref = useRef(null);
+    const h2Ref = useRef(null);
+    const p1Ref = useRef(null);
+    const p2Ref = useRef(null);
+    const cube=useRef(null);
+
+    useEffect(() => {
+        const tl = gsap.timeline();
+
+        tl.fromTo(
+            h1Ref.current,
+            { opacity: 0, x: -100 },
+            { opacity: 1, x: 0, duration: 0.5 }
+        ).fromTo(
+            h2Ref.current,
+            { opacity: 0, x: -100 },
+            { opacity: 1, x: 0, duration: 0.7 }
+        ).fromTo(
+            p1Ref.current,
+            { opacity: 0, x: -100 },
+            { opacity: 1, x: 0, duration: 0.7 }
+        ).fromTo(
+            p2Ref.current,
+            { opacity: 0, x: -100 },
+            { opacity: 1, x: 0, duration: 0.8 }
+        );
+
+        // Play the timeline
+        tl.play();
+    }, []);
+
     return (
-        <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-            <div className='px-4'>
-                <h1 className='text-5xl font-serif font-semibold'>Company</h1>
-                <h2 className='text-xl mt-3'>Your trusted partner.</h2>
-                <p className='text-justify font-serif text-lg mt-4 leading-relaxed tracking-wide'>
-                    <span className='text-xl font-bold'>BranchKarma International</span> is a group of brands committed to excellence, innovation, and sustainable growth. We currently primarily serve India and the United States of America. Our diverse portfolio encompasses a wide range of industries including technology, finance, construction, consulting, education, and consumer goods. We aim to be a key player in driving economic advancement and technological innovation worldwide.
+        <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-4 mt-24">
+            <div className='px-8'>
+                <h1 className='text-xl font-customFont   font-semibold ' ref={h1Ref}>
+                    Empowering Global Progress, Together
+                </h1>
+                <h2 className='font-customFont  text-xl mt-3 italic' ref={h2Ref}>
+                    Your trusted partner.
+                </h2>
+                <p className='text-justify font-customFont text-md mt-4 leading-relaxed tracking-wide' ref={p1Ref}>
+                    <span className='text-md font-bold'>BranchKarma International</span> is a group of brands committed to excellence, innovation, and sustainable growth. We currently primarily serve India and the United States of America. Our diverse portfolio encompasses a wide range of industries including technology, finance, construction, consulting, education, and consumer goods. We aim to be a key player in driving economic advancement and technological innovation worldwide.
                 </p>
-                <p className={expanded ? 'text-justify text-lg font-serif leading-relaxed tracking-wide' : 'line-clamp-3 text-lg leading-relaxed tracking-wide'}>
+                <p className={expanded ? 'text-justify text-md font-customFont leading-relaxed tracking-wide' : 'line-clamp-3 text-md leading-relaxed tracking-wide'} ref={p2Ref}>
                     At Branch Karma, we believe in the strength of collaboration and diversity. Our team of dedicated professionals brings together a wealth of experience, expertise, and cultural perspectives, enabling us to tackle complex challenges and deliver cutting-edge solutions. Our commitment to innovation is at the heart of everything we do, as we continuously invest in research and development to stay at the forefront of industry trends and emerging technologies.
                 </p>
                 <button className="text-[#81D8D0]" onClick={toggleExpanded}>
                     {expanded ? 'Read Less' : 'Read More'}
                 </button>
             </div>
-            <div className='mt-20'>
+            <div ref={cube} className='mt-20'>
                 <CubeSlider images={images} interval={5000} />
             </div>
         </div>
