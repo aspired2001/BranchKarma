@@ -30,7 +30,7 @@ function Carreers() {
         </p>
         <p className="mt-4 text-lg font-serif text-justify leading-relaxed tracking-wide">
           As a multinational organization operating in multiple countries across diverse industries, including{' '}
-          <span className="font-bold italic">technology, healthcare, finance, energy, and manufacturing</span>, we offer a wide range of career opportunities. Whether you're a seasoned professional or a recent graduate, you'll find a world of possibilities to explore, from research and development to marketing, management, and beyond.
+          <span className="font-bold italic">technology, healthcare, finance, energy, and manufacturing</span>, we offer a wide range of career opportunities. Whether you&apos;re a seasoned professional or a recent graduate, you&apos;ll find a world of possibilities to explore, from research and development to marketing, management, and beyond.
         </p>
         <p className="mt-4 text-lg font-serif text-justify leading-relaxed tracking-wide">
           We are looking for passionate, talented, and driven individuals who are eager to make a positive impact and contribute to our mission of shaping a better future. In return, we offer competitive compensation packages, comprehensive benefits, and numerous professional development programs designed to help you grow both personally and professionally.
@@ -39,7 +39,7 @@ function Carreers() {
           At Branch Karma, diversity is our strength. We celebrate and respect the unique perspectives and backgrounds of our global workforce and are committed to promoting equality and inclusion in all aspects of our business.
         </p>
         <p className="mt-4 text-lg font-serif text-justify leading-relaxed tracking-wide">
-          If you're ready to join a company that values innovation, sustainability, and social responsibility, we invite you to explore our current openings and discover how you can make a difference with us.
+          If you&apos;re ready to join a company that values innovation, sustainability, and social responsibility, we invite you to explore our current openings and discover how you can make a difference with us.
         </p>
       </div>
 

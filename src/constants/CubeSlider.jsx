@@ -1,50 +1,53 @@
-import  { useState, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
+import Swiper from 'swiper';
 import PropTypes from 'prop-types';
-import './CubeSlider.css';
 
-const CubeSlider = ({ images, interval }) => {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+import 'swiper/css';
+import 'swiper/css/effect-cube';
+import 'swiper/css/pagination'; // Include pagination CSS if needed
+
+const CubeCarousel = ({ images }) => {
+    const swiperRef = useRef(null);
 
     useEffect(() => {
-        const intervalId = setInterval(nextImage, interval);
+        if (swiperRef.current && images.length > 0) {
+            const swiper = new Swiper(swiperRef.current, {
+                effect: 'cube',
+                grabCursor: true,
+                cubeEffect: {
+                    shadow: true,
+                    slideShadows: true,
+                    shadowOffset: 20,
+                    shadowScale: 0.94,
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+            });
 
-        return () => {
-            clearInterval(intervalId);
-        };
-    }); // Re-run effect whenever currentImageIndex or interval changes
-
-    const nextImage = () => {
-        setCurrentImageIndex((prevIndex) =>
-            prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        );
-    };
-
-    // const prevImage = () => {
-    //     setCurrentImageIndex((prevIndex) =>
-    //         prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    //     );
-    // };
+            return () => {
+                swiper.destroy();
+            };
+        }
+    }, [images]);
 
     return (
-        <div className="cube-slider">
-            <div className="cube" style={{ transform: `rotateY(${currentImageIndex * -90}deg)` }}>
+        <div className="swiper-container" ref={swiperRef}>
+            <div className="swiper-wrapper">
                 {images.map((image, index) => (
-                    <div key={index} className="side" style={{ backgroundImage: `url(${image})` }}></div>
+                    <div className="swiper-slide" key={index}>
+                        <img src={image} alt={`Slide ${index + 1}`} />
+                    </div>
                 ))}
             </div>
-            {/* <button className="prev" onClick={prevImage}>&#10094;</button>
-            <button className="next" onClick={nextImage}>&#10095;</button> */}
         </div>
     );
 };
 
-CubeSlider.propTypes = {
+CubeCarousel.propTypes = {
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
-    interval: PropTypes.number
 };
 
-CubeSlider.defaultProps = {
-    interval: 3000
-};
-
-export default CubeSlider;
+export default CubeCarousel;
