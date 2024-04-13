@@ -46,13 +46,13 @@ const Company = () => {
     return (
         <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-4 mt-36">
             <div className='px-8'>
-                <h1 className='text-2xl font-customFont   font-semibold ' ref={h1Ref}>
+                <h1 className='text-3xl font-customFont   font-semibold ' ref={h1Ref}>
                     Empowering Global Progress, Together
                 </h1>
-                <h2 className='font-customFont  text-xl mt-3 italic' ref={h2Ref}>
+                <h2 className='font-customFont  text-2xl mt-3 italic' ref={h2Ref}>
                     Your trusted partner.
                 </h2>
-                <p className='text-justify font-customFont text-[18px] mt-4 leading-relaxed tracking-wide' ref={p1Ref}>
+                <p className='text-justify font-customFont text-[18px] mt-4 leading-relaxed tracking-wide ' ref={p1Ref}>
                     <span className='text-md font-bold'>BranchKarma International</span> is a group of brands committed to excellence, innovation, and sustainable growth. We currently primarily serve India and the United States of America. Our diverse portfolio encompasses a wide range of industries including technology, finance, construction, consulting, education, and consumer goods. We aim to be a key player in driving economic advancement and technological innovation worldwide.
                 </p>
                 <p className={'text-justify text-[18px] font-customFont leading-relaxed tracking-wide'} ref={p2Ref}>
