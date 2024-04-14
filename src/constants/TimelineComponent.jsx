@@ -8,9 +8,9 @@ const Timeline = () => {
                 <li>Fill out form</li>
                 <li>CV Review</li>
                 <li>Schedule interview</li>
-                <li>Practical Assessment Engagement</li>
+                <li>Practical Assessment</li>
                 <li>Process Offer</li>
-                <li>Onboarding and Department placement</li>
+                <li>Onboarding and placement</li>
                 
                 
             </ul>

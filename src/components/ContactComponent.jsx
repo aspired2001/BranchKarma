@@ -17,7 +17,7 @@ const ContactCards = () => {
                 </div>
                 <div className="bg-white rounded-xl shadow-md overflow-hidden w-[300px] h-[340px] hover:bg-blue-500 hover:text-white drop-shadow-md">
                     <div className="p-6 space-y-2">
-                        <h2 className="text-black text-xl font-semibold">India: Global Headquarters</h2>
+                        <h2 className="text-black text-xl font-semibold ">USA:  Headquarters</h2>
                         <p className="text-gray-500">Adani Corporate House</p>
                         <p className="text-gray-500">Shantigram, Near Vaishnodevi Circle, S G Highway,</p>
                         <p className="text-gray-500">Ahmedabad-382421, Gujarat, India</p>
@@ -25,9 +25,9 @@ const ContactCards = () => {
                         <p className="text-gray-500">www.adani.com</p>
                     </div>
                 </div>
-                <div className="bg-white rounded-xl shadow-md overflow-hidden w-[300px] h-[340px] hover:bg-blue-500 hover:text-white drop-shadow-md">
+                <div className="bg-white rounded-xl shadow-md overflow-hidden w-[300px] h-[340px] hover:bg-blue-500  drop-shadow-md">
                     <div className="p-6 space-y-2">
-                        <h2 className="text-black text-xl font-semibold">India: Global Headquarters</h2>
+                        <h2 className="text-black text-xl font-semibold ">Mexico: Headquarters</h2>
                         <p className="text-gray-500">Adani Corporate House</p>
                         <p className="text-gray-500">Shantigram, Near Vaishnodevi Circle, S G Highway,</p>
                         <p className="text-gray-500">Ahmedabad-382421, Gujarat, India</p>

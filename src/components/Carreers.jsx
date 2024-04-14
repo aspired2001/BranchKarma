@@ -28,7 +28,7 @@ function Carreers() {
         <TimelineComponent />
       </div>
 
-      <div className="px-6">
+      <div className="px-12 mt-16">
         <h2 className="text-center text-3xl font-serif font-semibold mb-8">Careers at Branch Karma</h2>
         <p className="mt-8 text-lg font-serif text-justify leading-relaxed tracking-wide">
           Join our global team and embark on a journey of growth, innovation, and excellence. At{' '}

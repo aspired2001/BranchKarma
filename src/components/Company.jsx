@@ -45,22 +45,22 @@ const Company = () => {
 
     return (
         <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-4 mt-36">
-            <div className='px-8'>
+            <div className='px-12'>
                 <h1 className='text-3xl font-customFont   font-semibold ' ref={h1Ref}>
                     Empowering Global Progress, Together
                 </h1>
-                <h2 className='font-customFont  text-2xl mt-3 italic' ref={h2Ref}>
+                <h2 className='font-customFont  text-2xl mt-8 italic' ref={h2Ref}>
                     Your trusted partner.
                 </h2>
-                <p className='text-justify font-customFont text-[18px] mt-4 leading-relaxed tracking-wide ' ref={p1Ref}>
+                <p className='text-justify font-customFont text-[20px] mt-12 leading-relaxed tracking-wide' ref={p1Ref}>
                     <span className='text-md font-bold'>BranchKarma International</span> is a group of brands committed to excellence, innovation, and sustainable growth. We currently primarily serve India and the United States of America. Our diverse portfolio encompasses a wide range of industries including technology, finance, construction, consulting, education, and consumer goods. We aim to be a key player in driving economic advancement and technological innovation worldwide.
                 </p>
-                <p className={'text-justify text-[18px] font-customFont leading-relaxed tracking-wide mt-6'} ref={p2Ref}>
+                <p className={'text-justify text-[20px] font-customFont leading-relaxed tracking-wide mt-6'} ref={p2Ref}>
                     At Branch Karma, we believe in the strength of collaboration and diversity. Our team of dedicated professionals brings together a wealth of experience, expertise, and cultural perspectives, enabling us to tackle complex challenges and deliver cutting-edge solutions. Our commitment to innovation is at the heart of everything we do, as we continuously invest in research and development to stay at the forefront of industry trends and emerging technologies.
                 </p>
                
             </div>
-            <div ref={cube} className='mt-[80px] ml-[96px]'>
+            <div ref={cube} className='mt-[80px] ml-[80px]  px-[50px] translate-y-36'>
                 <CubeSlider images={images} interval={5000} />
             </div>
         </div>
