@@ -32,7 +32,7 @@ const Navbar = () => {
                                 className="text-3xl cursor-pointer lg:hidden text-white"
                             />
                             {/* logo */}
-                            <Link to={"/"} className="text-3xl font-customFont text-white ml-8">
+                            <Link to={"/"} className="text-3xl font-customFont text-white ml-8 text-nowrap">
                                 Branch Karma
                             </Link>
                         </section>
