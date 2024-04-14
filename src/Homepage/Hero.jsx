@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from 'gsap';
 import { useRef, useEffect } from 'react';
+import './Hero.css'
 
 function Hero() {
 
@@ -36,11 +38,28 @@ function Hero() {
     }, []);
 
 
+    const [words, setWords] = useState(['Build', 'Out', 'Karma', 'Beyond']);
+    const [currentWordIndex, setCurrentWordIndex] = useState(0);
+    const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
 
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentLetterIndex((prevIndex) => {
+                if (prevIndex < words[currentWordIndex].length - 1) {
+                    return prevIndex + 1;
+                } else {
+                    setCurrentWordIndex((prevWordIndex) => (prevWordIndex + 1) % words.length);
+                    return 0;
+                }
+            });
+        }, 270); // Change interval duration as needed
+
+        return () => clearInterval(intervalId);
+    }, [words, currentWordIndex]);
     return (
         <div
             
-            className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-[68px] h-[450px] w-full px-4"
+            className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-[75px] h-[450px] w-full px-4"
         >
             <div className="flex flex-col justify-center translate-x-4"  >
                 <h1  className="text-white mb-4 text-5xl text-wrap font-customFont font-semibold"
@@ -53,16 +72,23 @@ function Hero() {
                 </h1>
 
                 <div
-                    className="flex flex-col md:flex-row mt-5 gap-2"
+                    className="flex flex-row md:flex-row mt-5 gap-2"
                     ref={LinkRef}
                 >
-                    <Link to={'/contact'} className="text-white text-[25px] font-semibold text-center mb-2 md:mr-4 h-16 w-[160px] border rounded-[50px] pt-2 hover:bg-white hover:text-black
+                    <Link to={'/contact'} className="text-white text-[20px] font-semibold text-center mb-2 md:mr-4 h-12 w-[160px] border rounded-[50px] pt-2 hover:bg-white hover:text-black
                     " >
                         Contact Us
                     </Link>
-                    <Link to={'/company'} className="text-white text-[25px] font-semibold text-center mb-2 md:mr-4 h-16 w-[160px] border rounded-[50px] pt-2 hover:bg-white hover:text-black">
+                    <Link to={'/company'} className="text-white text-[20px] font-semibold text-center mb-2 md:mr-4 h-12 w-[160px] border rounded-[50px] pt-2 hover:bg-white hover:text-black">
                         Learn More
                     </Link>
+                </div>
+                <div className="mt-20 text-white">
+                    <h1 className="text-3xl">Branch
+                        <span className="animated-word">
+                            {words[currentWordIndex].substring(0, currentLetterIndex + 1)}
+                        </span>
+                    </h1>
                 </div>
             </div>
             <div className="hidden md:block" ref={imgRef}>

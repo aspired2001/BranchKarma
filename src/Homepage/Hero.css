@@ -1,0 +1,9 @@
+.animated-word {
+    animation: typewriter 0.5s steps(1) forwards;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+}

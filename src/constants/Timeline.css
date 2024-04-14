@@ -5,6 +5,8 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 180px);
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 li {
@@ -21,13 +23,13 @@ li {
     border: 20px solid #0000;
     background: linear-gradient(#000000 0 0) content-box,
         linear-gradient(var(--c, #ffffff) 0 0) padding-box,
-        linear-gradient(var(--d, 90deg), #0000 75%, #42b132 0) border-box;
+        linear-gradient(var(--d, 90deg), #0000 75%, #81D8D0 0) border-box;
 }
 
 li:nth-child(even) {
     grid-column-end: -1;
     --d: -90deg;
-    --c: #009cda;
+    --c: #ffffff;
 }
 
 li:not(:last-child) {

@@ -23,7 +23,7 @@ function Carreers() {
       </div>
 
 
-      <div className="">
+      <div className="mt-24">
         <h1 className="text-center text-3xl font-serif font-semibold">Our Application Process</h1>
         <TimelineComponent />
       </div>

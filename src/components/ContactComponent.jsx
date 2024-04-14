@@ -2,10 +2,10 @@ import React from 'react';
 
 const ContactCards = () => {
     return (
-        <div>
-            <h1 className="text-white text-3xl font-serif font-semibold text-center">Contacts</h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 ml-20 max-w-7xl">
-                <div className="bg-white rounded-xl overflow-hidden w-[300px] h-[340px] hover:bg-blue-500 hover:text-white drop-shadow-md">
+        <div className='mt-48'>
+        
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4  ml-20 max-w-7xl ">
+                <div className="bg-white rounded-xl overflow-hidden w-[300px] h-[340px] hover:bg-blue-500 hover:text-white drop-shadow-md ">
                     <div className="p-6 space-y-2  ">
                         <h2 className="text-black text-xl font-semibold">India: Global Headquarters</h2>
                         <p className="text-gray-500">Adani Corporate House</p>
