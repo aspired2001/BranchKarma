@@ -40,7 +40,7 @@ function Hero() {
     return (
         <div
             
-            className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-[68px] h-[450px] w-full"
+            className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-[68px] h-[450px] w-full px-4"
         >
             <div className="flex flex-col justify-center translate-x-4"  >
                 <h1  className="text-white mb-4 text-5xl text-wrap font-customFont font-semibold"
@@ -56,11 +56,11 @@ function Hero() {
                     className="flex flex-col md:flex-row mt-5 gap-2"
                     ref={LinkRef}
                 >
-                    <Link className="text-white text-[25px] font-semibold text-center mb-2 md:mr-4 h-16 w-[160px] border rounded-[50px] pt-2 hover:bg-white hover:text-black
+                    <Link to={'/contact'} className="text-white text-[25px] font-semibold text-center mb-2 md:mr-4 h-16 w-[160px] border rounded-[50px] pt-2 hover:bg-white hover:text-black
                     " >
                         Contact Us
                     </Link>
-                    <Link className="text-white text-[25px] font-semibold text-center mb-2 md:mr-4 h-16 w-[160px] border rounded-[50px] pt-2 hover:bg-white hover:text-black">
+                    <Link to={'/company'} className="text-white text-[25px] font-semibold text-center mb-2 md:mr-4 h-16 w-[160px] border rounded-[50px] pt-2 hover:bg-white hover:text-black">
                         Learn More
                     </Link>
                 </div>
@@ -69,7 +69,7 @@ function Hero() {
                 <img
                     src="assets/Hero.png"
                     alt="Hero Image"
-                    className="w-full h-auto mr-6"
+                    className="w-[700px] h-[450px] mr-6"
                 />
             </div>
         </div>

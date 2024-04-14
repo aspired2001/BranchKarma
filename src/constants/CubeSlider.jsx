@@ -1,53 +1,47 @@
-import React, { useEffect, useRef } from 'react';
-import Swiper from 'swiper';
+// CubeSlider.js
+
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import './CubeSlider.css';
 
-import 'swiper/css';
-import 'swiper/css/effect-cube';
-import 'swiper/css/pagination'; // Include pagination CSS if needed
-
-const CubeCarousel = ({ images }) => {
-    const swiperRef = useRef(null);
+const CubeSlider = ({ images, interval }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
-        if (swiperRef.current && images.length > 0) {
-            const swiper = new Swiper(swiperRef.current, {
-                effect: 'cube',
-                grabCursor: true,
-                cubeEffect: {
-                    shadow: true,
-                    slideShadows: true,
-                    shadowOffset: 20,
-                    shadowScale: 0.94,
-                },
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                loop: true,
-            });
+        const intervalId = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, interval);
 
-            return () => {
-                swiper.destroy();
-            };
-        }
-    }, [images]);
+        return () => clearInterval(intervalId);
+    }, [images, interval]);
 
     return (
-        <div className="swiper-container" ref={swiperRef}>
-            <div className="swiper-wrapper">
-                {images.map((image, index) => (
-                    <div className="swiper-slide" key={index}>
-                        <img src={image} alt={`Slide ${index + 1}`} />
-                    </div>
-                ))}
+        <div className="cube-slider">
+            <div className="cube">
+                <div className="cube-inner">
+                    {images.map((image, index) => (
+                        <div
+                            key={index}
+                            className={`cube-face face-${index}`}
+                            style={{
+                                backgroundImage: `url(${image})`,
+                                transform: `rotateY(${index * 90}deg) translateZ(150px)`,
+                            }}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     );
 };
 
-CubeCarousel.propTypes = {
+CubeSlider.propTypes = {
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    interval: PropTypes.number,
 };
 
-export default CubeCarousel;
+CubeSlider.defaultProps = {
+    interval: 3000,
+};
+
+export default CubeSlider;

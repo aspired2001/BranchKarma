@@ -1,23 +1,29 @@
-import TimelineComponent from "../constants/TimelineComponent"
+import TimelineComponent from "../constants/TimelineComponent";
+import {Link}  from 'react-router-dom';
 
 
 function Carreers() {
   return (
-    <div className="text-white mt-20">
-      <h1 className="text-5xl font-bold font-serif text-center">Careers</h1>
+    <div className="text-white mt-28">
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12">
         <div className="flex items-center flex-col justify-center border-r border-gray-300">
           <span className="italic font-serif text-lg text-center">&quot;Anyone who has never made a mistake has never tried anything new.&quot;</span>
           <img className="max-w-[400px] h-[270px] rounded-[10px] shadow-lg hover:transition-all hover:-translate-y-2 hover:cursor-pointer my-3 px-2" src="assets/img15.png" alt="Join us!" />
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center relative">
           <span className="text-lg text-center font-serif">Let&apos;s team up!</span>
-          <img className="w-[400px] h-[270px] rounded-lg shadow-lg hover:transition-all hover:-translate-y-2 hover:cursor-pointer my-3 " src="assets/img11.png " alt="Join us!" />
+          <div className="relative w-[400px] h-[270px] rounded-lg shadow-lg overflow-hidden my-3">
+            <img className="w-full h-full object-cover transition-opacity duration-300 hover:opacity-50" src="https://images.unsplash.com/photo-1638262052640-82e94d64664a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhhbmRzaGFrZXxlbnwwfHwwfHx8MA%3D%3D" alt="Join us!" />
+            <Link to={'/contact'} className="absolute inset-0 flex justify-center items-center text-white text-2xl font-semibold bg-[#81D8D0] bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
+              Join Now
+            </Link>
+          </div>
         </div>
       </div>
 
 
-      <div>
+      <div className="">
         <h1 className="text-center text-3xl font-serif font-semibold">Our Application Process</h1>
         <TimelineComponent />
       </div>

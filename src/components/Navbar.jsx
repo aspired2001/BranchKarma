@@ -2,7 +2,7 @@ import { useState } from "react";
 import {Link} from 'react-router-dom';
 import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
-import { FiGlobe } from 'react-icons/fi';
+
 import clsx from "clsx";
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
         { label: "Industries", link: "/industries" },
         { label: "Holdings", link: "/holdings" },
         { label: "Principles", link: "/principles" },
-        { label: "philanthropy", link: "/philanthropy" },
+        { label: "Philanthropy", link: "/philanthropy" },
         { label: "Insights", link: "/insights" },
         { label: "Login", link: "/portal" },
     ];
@@ -32,13 +32,13 @@ const Navbar = () => {
                                 className="text-3xl cursor-pointer lg:hidden text-white"
                             />
                             {/* logo */}
-                            <Link to={"/"} className="text-3xl font-customFont text-white">
-                                BranchKarma
+                            <Link to={"/"} className="text-3xl font-customFont text-white ml-8">
+                                Branch Karma
                             </Link>
                         </section>
                         {navlinks.map((d, i) => (
-                            <Link className="translate-x-16" key={i} to={d.link}>
-                                <a className="hidden lg:block text-white hover:text-[#81D8D0] text-nowrap font-customFont hover:border-b-[4px] hover:border-[#81D8D0] ">
+                            <Link className="translate-x-20" key={i} to={d.link}>
+                                <a className="hidden lg:block text-[18px] text-white font-semibold hover:text-[#81D8D0] text-nowrap font-customFont hover:border-b-[4px] hover:border-[#81D8D0] ">
                                     {d.label}
                                 </a>
                             </Link>
@@ -66,11 +66,7 @@ const Navbar = () => {
                         </section>
                     </div>
 
-                    {/* last section */}
-                    <section className="flex items-center gap-4">
-                        {/* cart icon */}
-                        <FiGlobe className="text-2xl text-white" />
-                    </section>
+
                 </div>
             </nav>
 
