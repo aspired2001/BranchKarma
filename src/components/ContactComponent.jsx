@@ -5,7 +5,7 @@ const ContactCards = () => {
     return (
         <div className='mt-48'>
         
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-16 pr-12 max-w-7xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-16  max-w-7xl">
                 <div className="bg-white overflow-hidden w-full md:w-[370px] h-[380px] hover:bg-[#81D8D0] hover:text-white drop-shadow-md">
 
                     <div className="p-6 space-y-6">
