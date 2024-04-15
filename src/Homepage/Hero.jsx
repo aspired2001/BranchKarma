@@ -95,7 +95,7 @@ function Hero() {
                 <img
                     src="assets/Map1.png"
                     alt="Hero Image"
-                    className="w-auto h-auto max-w-[790px] max-h-[470px]  bg-cover"
+                    className="w-auto h-auto max-w-[800px] max-h-[470px] -translate-x-8 bg-cover"
                 />
             </div>
         </div>
