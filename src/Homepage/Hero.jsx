@@ -93,9 +93,9 @@ function Hero() {
             </div>
             <div className="hidden md:block" ref={imgRef}>
                 <img
-                    src="https://branchkarma-web.vercel.app/assets/image/world-map-black-with-borders888-small.jpg"
+                    src="assets/old.png"
                     alt="Hero Image"
-                    className="w-[800px] h-[520px] mr-6"
+                    className="w-[790px] h-[470px] mr-6"
                 />
             </div>
         </div>
