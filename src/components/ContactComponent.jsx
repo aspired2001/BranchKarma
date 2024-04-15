@@ -3,9 +3,9 @@ import Form from '../constants/Form';
 
 const ContactCards = () => {
     return (
-        <div className='mt-48'>
-        
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-16  max-w-7xl">
+        <div className='mt-32'>
+            <h1 className="text-white text-3xl font-customFont ml-[70px] font-semibold">Our Offices</h1>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-16  max-w-7xl mt-8">
                 <div className="bg-white overflow-hidden w-full md:w-[370px] h-[380px] hover:bg-[#81D8D0] hover:text-white drop-shadow-md">
 
                     <div className="p-6 space-y-6">
@@ -40,7 +40,7 @@ const ContactCards = () => {
             </div>
 
             <div className='mt-16 px-16'>
-                <h1 className='text-white font-customFont text-3xl text-center pb-12'>Contact Us</h1>
+                <h1 className='text-white font-customFont text-3xl ml-[58px] font-bold'>Contact Us</h1>
                 <Form/>
             </div>
         </div>
