@@ -5,9 +5,9 @@ const ContactCards = () => {
     return (
         <div className='mt-48'>
         
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ml-16 px-8 max-w-7xl">
-                <div className="bg-white overflow-hidden w-full md:w-[300px] h-[340px] hover:bg-blue-500 hover:text-white drop-shadow-md">
-                    <div className="p-6 space-y-2">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ml-16 pr-12 max-w-7xl">
+                <div className="bg-white overflow-hidden w-full md:w-[370px] h-[380px] hover:bg-blue-500 hover:text-white drop-shadow-md">
+                    <div className="p-6 space-y-6">
                         <h2 className="text-black text-xl font-semibold">India: Global Headquarters</h2>
                         <p className="text-gray-700">Adani Corporate House</p>
                         <p className="text-gray-700">Shantigram, Near Vaishnodevi Circle, S G Highway,</p>
@@ -16,8 +16,8 @@ const ContactCards = () => {
                         <p className="text-gray-700">www.adani.com</p>
                     </div>
                 </div>
-                <div className="bg-white shadow-md overflow-hidden w-full md:w-[300px] h-[340px] hover:bg-blue-500 hover:text-white drop-shadow-md">
-                    <div className="p-6 space-y-2">
+                <div className="bg-white shadow-md overflow-hidden w-full md:w-[370px] h-[380px] hover:bg-blue-500 hover:text-white drop-shadow-md">
+                    <div className="p-6 space-y-6">
                         <h2 className="text-black text-xl font-semibold">USA: Headquarters</h2>
                         <p className="text-gray-700">Adani Corporate House</p>
                         <p className="text-gray-700">Shantigram, Near Vaishnodevi Circle, S G Highway,</p>
@@ -26,8 +26,8 @@ const ContactCards = () => {
                         <p className="text-gray-700">www.adani.com</p>
                     </div>
                 </div>
-                <div className="bg-white shadow-md overflow-hidden w-full md:w-[300px] h-[340px] hover:bg-blue-500 hover:text-white drop-shadow-md">
-                    <div className="p-6 space-y-2">
+                <div className="bg-white shadow-md overflow-hidden w-full md:w-[370px] h-[380px] hover:bg-blue-500 hover:text-white drop-shadow-md">
+                    <div className="p-6 space-y-6">
                         <h2 className="text-black text-xl font-semibold">Mexico: Headquarters</h2>
                         <p className="text-gray-700">Adani Corporate House</p>
                         <p className="text-gray-700">Shantigram, Near Vaishnodevi Circle, S G Highway,</p>

@@ -95,7 +95,7 @@ function Hero() {
                 <img
                     src="assets/old.png"
                     alt="Hero Image"
-                    className="w-[790px] h-[470px] mr-6"
+                    className="w-auto h-auto max-w-[790px] max-h-[470px] mr-6 bg-cover"
                 />
             </div>
         </div>
