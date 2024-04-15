@@ -95,7 +95,7 @@ function Hero() {
                 <img
                     src="https://branchkarma-web.vercel.app/assets/image/world-map-black-with-borders888-small.jpg"
                     alt="Hero Image"
-                    className="w-[750px] h-[550px] mr-6"
+                    className="w-[800px] h-[520px] mr-6"
                 />
             </div>
         </div>

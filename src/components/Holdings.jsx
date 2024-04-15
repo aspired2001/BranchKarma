@@ -16,7 +16,7 @@ const Holdings = () => {
 
     return (
         <div className="mt-32">
-            <h1 className="text-white text-3xl font-customFont ml-36 font-semibold">Industries</h1>
+            <h1 className="text-white text-3xl font-customFont ml-36 font-semibold">Holdings</h1>
         
         <div className="flex flex-wrap justify-center p-4 mt-16">
             
