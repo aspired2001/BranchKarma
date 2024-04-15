@@ -1,5 +1,7 @@
 import TimelineComponent from "../constants/TimelineComponent";
 import {Link}  from 'react-router-dom';
+import Benefits from "./Benefits";
+
 
 
 function Carreers() {
@@ -47,6 +49,15 @@ function Carreers() {
         <p className="mt-4 text-lg font-serif text-justify leading-relaxed tracking-wide">
           If you&apos;re ready to join a company that values innovation, sustainability, and social responsibility, we invite you to explore our current openings and discover how you can make a difference with us.
         </p>
+      </div>
+
+      <div  className="mt-20">
+          <Benefits/>
+
+      </div>
+
+      <div className="mt-20">
+        <Link className=" w-24  h-12  bg-white text-black font-customFont ml-[640px] rounded-md font-semibold hover ">Let&apos;s team up </Link>
       </div>
 
     </div>

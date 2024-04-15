@@ -2,7 +2,7 @@ import './Timeline.css'
 
 const Timeline = () => {
     return (
-        <div>
+        <div className='Time'>
             
             <ul className="timeline mt-12">
                 <li>Fill out form</li>
