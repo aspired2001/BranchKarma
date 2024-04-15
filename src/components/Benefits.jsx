@@ -5,7 +5,7 @@ const Benefits = () => {
         <div className="container bg-black mx-auto w-full h-full font-customFont">
             <h1 className='text-center text-3xl font-customFont font-semibold'>Benefits</h1>
             <div className="relative wrap overflow-hidden p-10 h-full mt-8">
-                <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style={{ left: '50%' }}></div>
+                <div className="border-2-2 absolute border-opacity-20  h-full border" style={{ left: '50%' }}></div>
 
                 {/* Right timeline */}
                 <div className="mb-8 flex justify-between items-center w-full right-timeline">

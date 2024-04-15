@@ -7,7 +7,7 @@
 .cube {
     width: 300px;
     /* Adjust size as needed */
-    height: 300px;
+    height: 320px;
     position: relative;
     transform-style: preserve-3d;
     animation: rotate 10s infinite linear;
