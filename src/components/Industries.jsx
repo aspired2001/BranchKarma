@@ -21,7 +21,7 @@ const Industries = () => {
         {companyNames.map((company, index) => (
           <div
             key={index}
-            className={`card h-[360px] w-[360px] md:w-[360px] bg-gray-500 hover:bg-[#81D8D0] transition-colors duration-300 rounded-full shadow-md m-4 flex justify-center items-center text-[30px] text-white font-bold ${index === 3 ? 'md:col-span-3' : 'md:col-span-1'
+            className={`card h-[360px] w-[360px] md:w-[360px] bg-gray-500 hover:bg-[#81D8D0] transition-colors font-customFont duration-300 rounded-full shadow-md m-4 flex justify-center items-center text-[30px] text-white font-bold ${index === 3 ? 'md:col-span-3' : 'md:col-span-1'
               }`}
           >
             {company}
