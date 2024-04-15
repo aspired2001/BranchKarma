@@ -8,6 +8,7 @@ import Carreers from './components/Carreers';
 import ContactCards from './components/ContactComponent';
 import Industries from './components/Industries';
 import Holdings from './components/Holdings';
+import Philanthrophy from './components/Philanthrophy';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={<ContactCards />} />
         <Route path="/industries" element={<Industries />} />
         <Route path="/holdings" element={<Holdings />} />
+        <Route path="/philanthropy" element={<Philanthrophy />} />
       </Routes>
     </div>
   );

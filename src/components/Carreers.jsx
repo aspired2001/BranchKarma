@@ -56,8 +56,8 @@ function Carreers() {
 
       </div>
 
-      <div className="mt-20">
-        <Link className=" w-24  h-12  bg-white text-black font-customFont ml-[640px] rounded-md font-semibold hover ">Let&apos;s team up </Link>
+      <div className="mt-20 ">
+        <Link className=" w-24  h-12  hover:bg-white hover:text-black border-2 text-2xl p-4 font-customFont ml-[640px] rounded-3xl font-semibold hover ">Let&apos;s team up </Link>
       </div>
 
     </div>

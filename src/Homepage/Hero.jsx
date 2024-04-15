@@ -85,7 +85,7 @@ function Hero() {
                 </div>
                 <div className="mt-20 text-white">
                     <h1 className="text-3xl">Branch
-                        <span className="animated-word">
+                        <span className="animated-word text-[#81D8D0] font-semibold">
                             {words[currentWordIndex].substring(0, currentLetterIndex + 1)}
                         </span>
                     </h1>
@@ -93,9 +93,9 @@ function Hero() {
             </div>
             <div className="hidden md:block" ref={imgRef}>
                 <img
-                    src="assets/Hero.png"
+                    src="https://branchkarma-web.vercel.app/assets/image/world-map-black-with-borders888-small.jpg"
                     alt="Hero Image"
-                    className="w-[700px] h-[450px] mr-6"
+                    className="w-[750px] h-[550px] mr-6"
                 />
             </div>
         </div>

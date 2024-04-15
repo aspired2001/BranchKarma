@@ -1,36 +1,35 @@
+import React from 'react';
 
+const Industries = () => {
+  // Array of random company names
+  const companyNames = [
+    'Construction',
+    'Consulting',
+    'Asset Management',
+    'Angel Investing',
+    'Agriculture',
+    'Consumer Goods',
+    'Technology',
+  ];
 
-function Industries() {
   return (
- <div className="flex flex-wrap justify-center mt-[200px]">
-      {/* First Column */}
-      <div className="bubble bg-white shadow-inner rounded-full p-8 m-4 text-center group hover:bg-[#81D8D0] cursor-pointer">
-        <span className="text-lg font-bold">Construction</span>
-      </div>
-          <div className="bubble bg-white hover:bg-[#81D8D0] cursor-pointer  shadow-inner rounded-full p-8 m-4 text-center">
-        <span className="text-lg font-bold">Consulting</span>
-      </div>
+    <div className="mt-36">
+      <h1 className="text-white text-3xl font-customFont ml-32 font-semibold">Industries</h1>
 
-      {/* Second Column */}
-          <div className="bubble bg-white hover:bg-[#81D8D0] cursor-pointer rounded-full p-8 m-4 text-center">
-        <span className="text-lg font-bold">Asset Management</span>
-      </div>
-          <div className="bubble bg-white hover:bg-[#81D8D0] cursor-pointer rounded-full p-8 m-4 text-center">
-        <span className="text-lg font-bold">Angel Investing</span>
-      </div>
-          <div className="bubble bg-white hover:bg-[#81D8D0] cursor-pointer shadow-inner rounded-full p-8 m-4 text-center">
-        <span className="text-lg font-bold">Agriculture</span>
-      </div>
-
-      {/* Third Column */}
-          <div className="bubble bg-white hover:bg-[#81D8D0] cursor-pointer shadow-inner rounded-full p-8 m-4 text-center">
-        <span className="text-lg font-bold">Consumer Goods</span>
-      </div>
-      <div className="bubble bg-white hover:bg-[#81D8D0] cursor-pointer rounded-full p-8 m-4 text-center">
-        <span className="text-lg font-bold">Technology</span>
+      <div className="flex flex-wrap justify-center p-4 mt-14 ">
+        {/* Render circle divs */}
+        {companyNames.map((company, index) => (
+          <div
+            key={index}
+            className={`card h-[160px] w-[160px] md:w-[160px] bg-gray-500 hover:bg-[#81D8D0] transition-colors duration-300 rounded-full shadow-md m-4 flex justify-center items-center text-white font-bold ${index === 3 ? 'md:col-span-3' : 'md:col-span-1'
+              }`}
+          >
+            {company}
+          </div>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Industries
+export default Industries;
