@@ -14,11 +14,10 @@ function Carreers() {
           <img className="max-w-[400px] h-[270px] rounded-[10px] shadow-lg hover:transition-all hover:-translate-y-2 hover:cursor-pointer my-3 px-2" src="assets/img15.png" alt="Join us!" />
         </div>
         <div className="flex flex-col justify-center items-center relative">
-          <span className="text-lg text-center font-serif">Let&apos;s team up!</span>
           <div className="relative w-[400px] h-[270px] rounded-lg shadow-lg overflow-hidden my-3">
             <img className="w-full h-full object-cover transition-opacity duration-300 hover:opacity-50" src="https://images.unsplash.com/photo-1638262052640-82e94d64664a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhhbmRzaGFrZXxlbnwwfHwwfHx8MA%3D%3D" alt="Join us!" />
             <Link to={'/contact'} className="absolute inset-0 flex justify-center items-center text-white text-2xl font-semibold bg-[#81D8D0] bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
-              Join Now
+              Let&apos;s team up!
             </Link>
           </div>
         </div>
@@ -26,27 +25,27 @@ function Carreers() {
 
 
       <div className="mt-24">
-        <h1 className="text-center text-3xl font-serif font-semibold">Our Application Process</h1>
+        <h1 className="text-center text-3xl font-customFont   font-semibold ">Our Application Process</h1>
         <TimelineComponent />
       </div>
 
-      <div className="px-12 mt-16">
-        <h2 className="text-center text-3xl font-serif font-semibold mb-8">Careers at Branch Karma</h2>
-        <p className="mt-8 text-lg font-serif text-justify leading-relaxed tracking-wide">
+      <div className="px-12 mt-16 ">
+        <h2 className="text-center text-3xl font-customFont font-semibold mb-8">Careers at Branch Karma</h2>
+        <p className="mt-8 text-lg text-justify leading-relaxed tracking-wide font-customFont">
           Join our global team and embark on a journey of growth, innovation, and excellence. At{' '}
           <span className="font-bold ">Branch Karma</span>, we believe that our team is the cornerstone of our success, and we are committed to fostering a dynamic and inclusive work environment where every individual can thrive.
         </p>
-        <p className="mt-4 text-lg font-serif text-justify leading-relaxed tracking-wide">
+        <p className="mt-4 text-lg font-customFont text-justify leading-relaxed tracking-wide">
           As a multinational organization operating in multiple countries across diverse industries, including{' '}
-          <span className="font-bold italic">technology, healthcare, finance, energy, and manufacturing</span>, we offer a wide range of career opportunities. Whether you&apos;re a seasoned professional or a recent graduate, you&apos;ll find a world of possibilities to explore, from research and development to marketing, management, and beyond.
+          <span className="font-bold italic ">technology, healthcare, finance, energy, and manufacturing</span>, we offer a wide range of career opportunities. Whether you&apos;re a seasoned professional or a recent graduate, you&apos;ll find a world of possibilities to explore, from research and development to marketing, management, and beyond.
         </p>
-        <p className="mt-4 text-lg font-serif text-justify leading-relaxed tracking-wide">
+        <p className="mt-4 text-lg font-customFont text-justify leading-relaxed tracking-wide">
           We are looking for passionate, talented, and driven individuals who are eager to make a positive impact and contribute to our mission of shaping a better future. In return, we offer competitive compensation packages, comprehensive benefits, and numerous professional development programs designed to help you grow both personally and professionally.
         </p>
-        <p className="mt-4 text-lg font-serif text-justify leading-relaxed tracking-wide">
+        <p className="mt-4 text-lg font-customFont text-justify leading-relaxed tracking-wide">
           At Branch Karma, diversity is our strength. We celebrate and respect the unique perspectives and backgrounds of our global workforce and are committed to promoting equality and inclusion in all aspects of our business.
         </p>
-        <p className="mt-4 text-lg font-serif text-justify leading-relaxed tracking-wide">
+        <p className="mt-4 text-lg font-customFont text-justify leading-relaxed tracking-wide">
           If you&apos;re ready to join a company that values innovation, sustainability, and social responsibility, we invite you to explore our current openings and discover how you can make a difference with us.
         </p>
       </div>
@@ -57,7 +56,7 @@ function Carreers() {
       </div>
 
       <div className="mt-20 ">
-        <Link className=" w-24  h-12  hover:bg-white hover:text-black border-2 text-2xl p-4 font-customFont ml-[640px] rounded-3xl font-semibold hover ">Let&apos;s team up </Link>
+        <Link className=" w-24  h-12  hover:bg-white hover:text-black border-2 text-xl p-2 font-customFont ml-[640px] rounded-3xl font-semibold hover ">Let&apos;s team up </Link>
       </div>
 
     </div>

@@ -10,8 +10,9 @@ const Benefits = () => {
                 {/* Right timeline */}
                 <div className="mb-8 flex justify-between items-center w-full right-timeline">
                     <div className="order-1 w-5/12"></div>
-                    <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                        <h1 className="mx-auto font-semibold text-lg text-white">1</h1>
+                    <div className="z-20 relative flex items-center order-1 bg-gray-800 shadow-xl w-auto h-auto rounded-full">
+                        <h1 className="mx-auto text-white font-semibold text-lg"></h1>
+                        <div className="absolute bottom-0 left-1/2 transform  bg-white h-[1px] w-[99px]"></div>
                     </div>
                     <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
                         <h3 className="mb-3 font-bold text-gray-800 text-xl">Unlimited Growth</h3>
@@ -23,8 +24,9 @@ const Benefits = () => {
                 {/* Left timeline */}
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>
-                    <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                        <h1 className="mx-auto text-white font-semibold text-lg">2</h1>
+                    <div className="z-20 relative flex items-center order-1 bg-gray-800 shadow-xl w-auto h-auto rounded-full">
+                        <h1 className="mx-auto text-white font-semibold text-lg"></h1>
+                        <div className="absolute bottom-0 left-1/2 transform -translate-x-24 bg-white h-[1px] w-[99px]"></div>
                     </div>
                     <div className="order-1 bg-[#81D8D0] rounded-lg shadow-xl w-5/12 px-6 py-4">
                         <h3 className="mb-3 font-bold text-white text-xl">Virtual network</h3>
@@ -36,8 +38,9 @@ const Benefits = () => {
                 {/* Right timeline */}
                 <div className="mb-8 flex justify-between items-center w-full right-timeline">
                     <div className="order-1 w-5/12"></div>
-                    <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                        <h1 className="mx-auto font-semibold text-lg text-white">3</h1>
+                    <div className="z-20 relative flex items-center order-1 bg-gray-800 shadow-xl w-auto h-auto rounded-full">
+                        <h1 className="mx-auto text-white font-semibold text-lg"></h1>
+                        <div className="absolute bottom-0 left-1/2 transform  bg-white h-[1px] w-[99px]"></div>
                     </div>
                     <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
                         <h3 className="mb-3 font-bold text-gray-800 text-xl">24 hours flexibility</h3>
@@ -48,8 +51,9 @@ const Benefits = () => {
                 {/* Left timeline */}
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>
-                    <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                        <h1 className="mx-auto text-white font-semibold text-lg">4</h1>
+                    <div className="z-20 relative flex items-center order-1 bg-gray-800 shadow-xl w-auto h-auto rounded-full">
+                        <h1 className="mx-auto text-white font-semibold text-lg"></h1>
+                        <div className="absolute bottom-0 left-1/2 transform -translate-x-24 bg-white h-[1px] w-[99px]"></div>
                     </div>
                     <div className="order-1 bg-[#81D8D0] rounded-lg shadow-xl w-5/12 px-6 py-4">
                         <h3 className="mb-3 font-bold text-white text-xl">Internal Promotions</h3>
@@ -61,8 +65,9 @@ const Benefits = () => {
                 {/* Right timeline */}
                 <div className="mb-8 flex justify-between items-center w-full right-timeline">
                     <div className="order-1 w-5/12"></div>
-                    <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                        <h1 className="mx-auto font-semibold text-lg text-white">5</h1>
+                    <div className="z-20 relative flex items-center order-1 bg-gray-800 shadow-xl w-auto h-auto rounded-full">
+                        <h1 className="mx-auto text-white font-semibold text-lg"></h1>
+                        <div className="absolute bottom-0 left-1/2 transform  bg-white h-[1px] w-[99px]"></div>
                     </div>
                     <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
                         <h3 className="mb-3 font-bold text-gray-800 text-xl">Benefit</h3>
@@ -74,9 +79,11 @@ const Benefits = () => {
                 {/* Left timeline */}
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>
-                    <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                        <h1 className="mx-auto text-white font-semibold text-lg">6</h1>
+                    <div className="z-20 relative flex items-center order-1 bg-gray-800 shadow-xl w-auto h-auto rounded-full">
+                        <h1 className="mx-auto text-white font-semibold text-lg"></h1>
+                        <div className="absolute bottom-0 left-1/2 transform -translate-x-24 bg-white h-[1px] w-[99px]"></div>
                     </div>
+
                     <div className="order-1 bg-[#81D8D0] rounded-lg shadow-xl w-5/12 px-6 py-4">
                         <h3 className="mb-3 font-bold text-white text-xl">Culture</h3>
                         <p className="text-lg font-medium leading-snug tracking-wide text-white text-opacity-100">We have active team building activities to integrate trust and leadership.

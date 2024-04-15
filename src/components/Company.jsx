@@ -16,6 +16,7 @@ const Company = () => {
     const h2Ref = useRef(null);
     const p1Ref = useRef(null);
     const p2Ref = useRef(null);
+    const divRef = useRef(null);
     const cube=useRef(null);
 
     useEffect(() => {
@@ -37,6 +38,10 @@ const Company = () => {
             p2Ref.current,
             { opacity: 0, x: -100 },
             { opacity: 1, x: 0, duration: 0.8 }
+        ).fromTo(
+            divRef.current,
+            { opacity: 0, x: -100 },
+            { opacity: 1, x: 0, duration: 0.8 }
         );
 
         // Play the timeline
@@ -44,6 +49,7 @@ const Company = () => {
     }, []);
 
     return (
+        <>
         <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-4 mt-36">
             <div className='px-12'>
                 <h1 className='text-3xl font-customFont   font-semibold ' ref={h1Ref}>
@@ -63,7 +69,21 @@ const Company = () => {
             <div ref={cube} className='mt-[80px] ml-[80px]  px-[50px] translate-y-36'>
                 <CubeSlider images={images} interval={5000} />
             </div>
+           
         </div>
+
+            <div ref={divRef} className='font-customFont mx-12 text-white'>
+                <p className='text-justify text-[20px] font-customFont leading-relaxed tracking-wide mt-6'>
+                    Sustainability and social responsibility are fundamental to our business philosophy. We are dedicated to creating a positive impact on society and the environment, implementing sustainable practices across our operations and supporting community initiatives that promote education, health, and well-being.
+
+                </p>
+                <p className='text-justify text-[20px] font-customFont leading-relaxed tracking-wide mt-6'>
+                    Our teamwork is built on a foundation of strong values, including integrity, excellence, and respect. We remain committed to driving growth, delivering value to our stakeholders, and shaping a better future for generations to come. We will always continue to expand our horizons, innovate for a sustainable future, and make a lasting impact on the world.
+
+                </p>
+            </div>
+
+        </>
     );
 };
 

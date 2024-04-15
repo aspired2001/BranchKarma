@@ -83,7 +83,7 @@ function Hero() {
                         Learn More
                     </Link>
                 </div>
-                <div className="mt-20 text-white">
+                <div className="mt-8 text-white">
                     <h1 className="text-3xl">Branch
                         <span className="animated-word text-[#81D8D0] font-semibold">
                             {words[currentWordIndex].substring(0, currentLetterIndex + 1)}
@@ -91,11 +91,11 @@ function Hero() {
                     </h1>
                 </div>
             </div>
-            <div className="hidden md:block" ref={imgRef}>
+            <div className="hidden md:block mr-20" ref={imgRef}>
                 <img
-                    src="assets/old.png"
+                    src="assets/Map1.png"
                     alt="Hero Image"
-                    className="w-auto h-auto max-w-[790px] max-h-[470px] mr-6 bg-cover"
+                    className="w-auto h-auto max-w-[790px] max-h-[470px]  bg-cover"
                 />
             </div>
         </div>
