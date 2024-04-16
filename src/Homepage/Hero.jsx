@@ -59,7 +59,7 @@ function Hero() {
     return (
         <div
             
-            className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-[75px] h-[450px] w-full px-4"
+            className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-[75px] h-[450px] w-full px-8"
         >
             <div className="flex flex-col justify-center translate-x-4 mt-16"  >
                 <h1  className="text-white mb-4 text-5xl text-wrap font-customFont font-semibold"

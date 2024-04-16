@@ -2,6 +2,7 @@ import { useRef, useEffect } from 'react';
 import CubeSlider from '../constants/CubeSlider';
 import { gsap } from 'gsap';
 
+
 const Company = () => {
     const images = [
         "assets/img1.png",
@@ -11,13 +12,12 @@ const Company = () => {
         "assets/img5.png"
     ];
 
-
     const h1Ref = useRef(null);
     const h2Ref = useRef(null);
     const p1Ref = useRef(null);
     const p2Ref = useRef(null);
     const divRef = useRef(null);
-    const cube=useRef(null);
+    const cubeRef = useRef(null);
 
     useEffect(() => {
         const tl = gsap.timeline();
@@ -42,6 +42,10 @@ const Company = () => {
             divRef.current,
             { opacity: 0, x: -100 },
             { opacity: 1, x: 0, duration: 0.8 }
+        ).fromTo(
+            cubeRef.current,
+            { opacity: 0, y: 100 },
+            { opacity: 1, y: 0, duration: 0.8 }
         );
 
         // Play the timeline
@@ -50,39 +54,36 @@ const Company = () => {
 
     return (
         <>
-        <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-4 mt-36">
-            <div className='px-12'>
-                <h1 className='text-3xl font-customFont   font-semibold ' ref={h1Ref}>
-                    Empowering Global Progress, Together
-                </h1>
-                <h2 className='font-customFont  text-2xl mt-8 italic' ref={h2Ref}>
-                    Your trusted partner.
-                </h2>
-                <p className='text-justify font-customFont text-[20px] mt-12 leading-relaxed tracking-wide' ref={p1Ref}>
-                    <span className='text-md font-bold'>BranchKarma International</span> is a group of brands committed to excellence, innovation, and sustainable growth. We currently primarily serve India and the United States of America. Our diverse portfolio encompasses a wide range of industries including technology, finance, construction, consulting, education, and consumer goods. We aim to be a key player in driving economic advancement and technological innovation worldwide.
-                </p>
-                <p className={'text-justify text-[20px] font-customFont leading-relaxed tracking-wide mt-6'} ref={p2Ref}>
-                    At Branch Karma, we believe in the strength of collaboration and diversity. Our team of dedicated professionals brings together a wealth of experience, expertise, and cultural perspectives, enabling us to tackle complex challenges and deliver cutting-edge solutions. Our commitment to innovation is at the heart of everything we do, as we continuously invest in research and development to stay at the forefront of industry trends and emerging technologies.
-                </p>
-               
+            <div className="text-white grid grid-cols-1 md:grid-cols-2 gap-4 mt-36">
+                <div className="px-8 md:px-12">
+                    <h1 className="text-3xl md:text-4xl font-customFont font-semibold" ref={h1Ref}>
+                        Empowering Global Progress, Together
+                    </h1>
+                    <h2 className="font-customFont text-xl md:text-2xl mt-4 md:mt-8 italic" ref={h2Ref}>
+                        Your trusted partner.
+                    </h2>
+                    <p className="text-justify font-customFont text-base md:text-lg mt-6 md:mt-12 leading-relaxed tracking-wide" ref={p1Ref}>
+                        <span className="text-md font-bold">BranchKarma International</span> is a group of brands committed to excellence, innovation, and sustainable growth. We currently primarily serve India and the United States of America. Our diverse portfolio encompasses a wide range of industries including technology, finance, construction, consulting, education, and consumer goods. We aim to be a key player in driving economic advancement and technological innovation worldwide.
+                    </p>
+                    <p className="text-justify font-customFont text-base md:text-lg mt-6 md:mt-12 leading-relaxed tracking-wide" ref={p2Ref}>
+                        At Branch Karma, we believe in the strength of collaboration and diversity. Our team of dedicated professionals brings together a wealth of experience, expertise, and cultural perspectives, enabling us to tackle complex challenges and deliver cutting-edge solutions. Our commitment to innovation is at the heart of everything we do, as we continuously invest in research and development to stay at the forefront of industry trends and emerging technologies.
+                    </p>
+                </div>
+                <div className="flex justify-center items-center mt-12 md:mt-0">
+                    <div ref={cubeRef} className="ml-[10%]">
+                        <CubeSlider images={images} interval={5000} />
+                    </div>
+                </div>
             </div>
-            <div ref={cube} className='mt-[80px] ml-[80px]  px-[50px] translate-y-36'>
-                <CubeSlider images={images} interval={5000} />
-            </div>
-           
-        </div>
 
-            <div ref={divRef} className='font-customFont mx-12 text-white'>
-                <p className='text-justify text-[20px] font-customFont leading-relaxed tracking-wide mt-6'>
+            <div ref={divRef} className="font-customFont text-white mx-8 md:mx-12 mt-12 md:mt-16">
+                <p className="text-justify font-customFont text-base md:text-lg leading-relaxed tracking-wide mt-6 md:mt-12">
                     Sustainability and social responsibility are fundamental to our business philosophy. We are dedicated to creating a positive impact on society and the environment, implementing sustainable practices across our operations and supporting community initiatives that promote education, health, and well-being.
-
                 </p>
-                <p className='text-justify text-[20px] font-customFont leading-relaxed tracking-wide mt-6'>
+                <p className="text-justify font-customFont text-base md:text-lg leading-relaxed tracking-wide mt-6 md:mt-12">
                     Our teamwork is built on a foundation of strong values, including integrity, excellence, and respect. We remain committed to driving growth, delivering value to our stakeholders, and shaping a better future for generations to come. We will always continue to expand our horizons, innovate for a sustainable future, and make a lasting impact on the world.
-
                 </p>
             </div>
-
         </>
     );
 };
