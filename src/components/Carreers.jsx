@@ -8,7 +8,7 @@ function Carreers() {
   return (
     <div className="text-white mt-28">
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-12 px-4 md:px-0">
         <div className="flex items-center flex-col justify-center border-r border-gray-300">
           <span className="italic font-serif text-lg text-center">&quot;Anyone who has never made a mistake has never tried anything new.&quot;</span>
           <img className="max-w-[400px] h-[270px] rounded-[10px] shadow-lg hover:transition-all hover:-translate-y-2 hover:cursor-pointer my-3 px-2" src="assets/img15.png" alt="Join us!" />
@@ -24,12 +24,12 @@ function Carreers() {
       </div>
 
 
-      <div className="mt-24">
+      <div className="mt-24 px-4 md:px-0">
         <h1 className="text-center text-3xl font-customFont   font-semibold ">Our Application Process</h1>
         <TimelineComponent />
       </div>
 
-      <div className="px-12 mt-16 ">
+      <div className="px-12 mt-16 md:px-12">
         <h2 className="text-center text-3xl font-customFont font-semibold mb-8">Careers at Branch Karma</h2>
         <p className="mt-8 text-lg text-justify leading-relaxed tracking-wide font-customFont">
           Join our global team and embark on a journey of growth, innovation, and excellence. At{' '}
@@ -50,13 +50,13 @@ function Carreers() {
         </p>
       </div>
 
-      <div  className="mt-20">
-          <Benefits/>
+      <div className="mt-20 px-4 md:px-0">
+        <Benefits />
 
       </div>
 
-      <div className="mt-20 ">
-        <Link className=" w-24  h-12  hover:bg-white hover:text-black border-2 text-[18px] p-3 font-customFont ml-[640px] rounded-[60px] font-semibold hover ">Let&apos;s team up </Link>
+      <div className="mt-20 px-4 md:px-0 flex justify-center">
+        <Link className="h-14 hover:bg-white hover:text-black border-2 text-[18px] p-3 font-customFont rounded-[60px] font-semibold hover">Let&apos;s team up</Link>
       </div>
 
     </div>

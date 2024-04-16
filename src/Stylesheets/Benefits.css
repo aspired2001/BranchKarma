@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .bottom-line {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.flip-horizontal {
+    transform: rotateY(180deg);
+}
